@@ -158,8 +158,16 @@ input, select {
     width: 510px;
     margin-top: 35px;
     border-radius: 5px;
-
+    display: none;
 }
+
+.music_box #pause1 {
+    width: 510px;
+    margin-top: 35px;
+    border-radius: 5px;
+    display: block;
+}
+
 .music_name {
     margin-top: 20px;
     padding: 15px;
@@ -205,11 +213,15 @@ input, select {
     overflow-y: scroll;
 }
 .music_list_name ul li {
+    margin: 30px;
     text-align: center;
-    padding: 10px;
     border-radius: 20px;
-    font-size: 25px;
-    font-weight:bold;
+    background-color: rgba(68, 2, 46, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
     color: rgb(255, 253, 253);
+    list-style-type: none
+    ;
     
 }

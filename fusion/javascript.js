@@ -7,6 +7,7 @@ let pause1 = document.getElementById('pause1')
 let play1 = document.getElementById('play1')
 let name_of_song =Array.from(document.getElementsByClassName('name_of_song'))
 let songItem = Array.from(document.getElementsByClassName('songItem'))
+let w = document.documentElement.clientWidth || window.innerWidth;
 
 let songs = [
   {song_name:'song1', song_path:'songs/1.mp3'},
@@ -31,17 +32,29 @@ let songs = [
    masterplay.addEventListener("click",() => {
   if (audioElement.paused || audioElement.currentTime <= 0) {
     audioElement.play()
-    masterplay.classList.remove('fa-play')
-    masterplay.classList.add('fa-pause')
-    play1.style.display = "block"
-    pause1.style.display = "none"
+    if (w<=768){
+      masterplay.classList.remove('fa-play')
+      masterplay.classList.add('fa-pause')
+    } else {
+      masterplay.classList.remove('fa-play')
+      masterplay.classList.add('fa-pause')
+      play1.style.display = "block"
+      pause1.style.display = "none"
+    }
+
 } else if (audioElement.play || audioElement.currentTime >= 0){
   audioElement.pause()
-  masterplay.classList.remove('fa-pause')
-  masterplay.classList.add('fa-play')
-  pause1.style.display = 'block';
-  play1.style.display = "none"
-}
+  if (w<=768){
+    masterplay.classList.remove('fa-pause')
+    masterplay.classList.add('fa-play')
+  }else{
+    masterplay.classList.remove('fa-pause')
+    masterplay.classList.add('fa-play')
+    pause1.style.display = 'block';
+    play1.style.display = "none"
+  }
+  }
+
 })
 // events to listin
 audioElement.addEventListener('timeupdate', ()=>{

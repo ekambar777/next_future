@@ -25,7 +25,13 @@ let songs = [
   {song_name:'song13', song_path:'songs/13.mp3'},
   {song_name:'song14', song_path:'songs/14.mp3'},
   {song_name:'song15', song_path:'songs/15.mp3'},
-  {song_name:'song16', song_path:'songs/16.mp3'}
+  {song_name:'song16', song_path:'songs/16.mp3'},
+  {song_name:'song17', song_path:'songs/17.mp3'},
+  {song_name:'song18', song_path:'songs/18.mp3'},
+  {song_name:'song19', song_path:'songs/19.mp3'},
+  {song_name:'song20', song_path:'songs/20.mp3'},
+  {song_name:'song21', song_path:'songs/21.mp3'},
+  {song_name:'song22', song_path:'songs/22.mp3'},
 ]
 
 // play pause click

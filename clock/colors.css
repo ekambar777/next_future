@@ -1,0 +1,40 @@
+.poss {
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.title {
+    width: 70vw;
+    text-align: center;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+.plc {
+    height: 20vh;
+    width: 12vw;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    font-size: 500%;
+    font-family:'Lucida Sans';
+
+}
+.date {
+    display: flex;
+    justify-content: right;
+}
+#day {
+    font-size: xx-large;
+    font-family:'Times New Roman';
+}
+#obj {
+    margin-left: 4vh;
+    font-size: xx-large;
+    font-family:'Times New Roman';
+}

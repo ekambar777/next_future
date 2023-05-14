@@ -168,11 +168,25 @@ input, select {
     display: block;
 }
 
-.music_name {
+.marquee {
+    height: 10vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee p {
     margin-top: 2%;
     padding: 15px;
     font-size: 200%;
     font-family: Impact;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 9s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }
 .adjuster {
     margin-top: 1%;
@@ -240,7 +254,7 @@ input, select {
         margin-right: 0;
         height: 20%;
         width: 100%;
-        background-color: rgb(136, 68, 145);
+        background-color: rgb(85, 63, 87);
         border-radius: 5px;
         display: flex;
         justify-content: flex-start;
@@ -255,12 +269,7 @@ input, select {
     .music_box #pause1 {
         display: none;
     }
-    .music_name {
-        margin-top: 0px;
-        padding: 1%;
-        font-size: 200%;
-        font-family: Impact;
-    }
+
     .adjuster {
         margin-top:0;
         width: 90%;
